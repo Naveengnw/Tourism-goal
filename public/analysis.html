@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gap Analysis - NWP</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">NWP Tourism</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/assets.html">Tourism Assets</a></li>
+                <li><a href="/analysis.html">Gap Analysis</a></li>
+                <li><a href="/recommendations.html">Recommendations</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Analysis of Tourism Assets in the North Western Province</h2>
+        <div class="page-layout">
+            <div class="sidebar">
+                <h3>Asset Distribution by Category</h3>
+                <div class="chart-container">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+                <h3>Key Insights</h3>
+                <div id="insights">
+                    <p>Loading analysis...</p>
+                </div>
+            </div>
+            <div id="map" class="map-container"></div>
+        </div>
+    </main>
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+ <script src="/js/analysis.js"></script>
+</body>
+</html>

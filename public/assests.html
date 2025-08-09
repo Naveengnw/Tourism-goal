@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Assets - NWP</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+    <header>
+        <div class="logo">NWP Tourism</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/assets.html">Tourism Assets</a></li>
+                <li><a href="/analysis.html">Gap Analysis</a></li>
+                <li><a href="/recommendations.html">Recommendations</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Interactive Map of Tourism Assets</h2>
+        <div class="page-layout">
+            <div class="sidebar">
+                <h3>Filter by Category</h3>
+                <div id="filter-controls">
+                    <button class="active" data-category="all">All Assets</button>
+                    <button data-category="religious">Religious</button>
+                    <button data-category="heritage">Heritage</button>
+                    <button data-category="nature">Nature/Eco-Spots</button>
+                    <button data-category="accommodation">Accommodation</button>
+                    <button data-category="urban">Urban</button>
+                </div>
+                <hr>
+                <h3>Asset Details</h3>
+                <div id="asset-description">
+                    <p>Click a marker on the map to see details.</p>
+                </div>
+            </div>
+            <div id="map" class="map-container"></div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/js/assets.js"></script>
+</body>
+</html>
