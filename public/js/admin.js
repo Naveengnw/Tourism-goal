@@ -1,4 +1,4 @@
-const API_BASE = '';
+const API_BASE = 'https://tourism-goal-production.up.railway.app/';
 
 async function login() {
   const username = document.getElementById('username').value;
